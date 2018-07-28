@@ -28,4 +28,16 @@
 			<property name="blank_line_after_check" value="0" />
 		</properties>
 	</rule>
+
+	<rule ref="WordPress">
+		<exclude name="WordPress.Files.FileName" />
+	</rule>
+	<!--
+	<rule ref="WordPress.Files.FileName">
+		<properties>
+			<property name="strict_class_file_names" value="false" />
+			<property name="is_theme" value="true" />
+		</properties>
+	</rule>
+	-->
 </ruleset>
