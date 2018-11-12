@@ -2,6 +2,9 @@
 <ruleset name="Conversion-Ready">
 	<description>A custom set of rules to check for a Conversion Ready WordPress project</description>
 
+	<!-- Spaces, not tabs -->
+	<rule ref="Generic.WhiteSpace.DisallowTabIndent" />
+
 	<!--
 	We may also want to to include all the rules in a standard
 	-->
@@ -13,6 +16,8 @@
 		different Sniffs, as their rules are broken. From here, we can opt to
 		exclude problematic sniffs like so.
 		-->
+		<!-- Spaces, not tabs -->
+		<exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
 	</rule>
 
 	<rule ref="WordPress-Extra">
