@@ -22,4 +22,23 @@
 
 	<rule ref="WordPress-Extra">
 	</rule>
+
+	<!--
+	Allow wider vertical spacing coding style:
+
+	```php
+		...
+
+		if ( foo ) {
+			bar();
+		}
+
+	}
+	```
+	-->
+	<rule ref="WordPress.WhiteSpace.ControlStructureSpacing">
+		<properties>
+			<property name="blank_line_after_check" value="0" />
+		</properties>
+	</rule>
 </ruleset>
